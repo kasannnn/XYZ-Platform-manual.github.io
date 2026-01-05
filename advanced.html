@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>応用・活用 - XYZ座標系プラットフォーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">XYZ Platform</a>
+            <ul>
+                <li><a href="hard.html">Hard</a></li>
+                <li><a href="circuit.html">Circuit</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="advanced.html" style="color: var(--primary-color);">Advanced</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content-section">
+            <h1 style="color: var(--secondary-color); text-align: center; margin-bottom: 40px;">応用と活用</h1>
+
+            <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 40px;">
+                このプラットフォームで学んだXYZ座標系の仕組みは、単なる勉強の道具ではありません。<br>
+                アイデア次第で、様々な機械や作品を生み出すことができます。
+            </p>
+
+            <h2 id="applications">何が作れる？</h2>
+            <p>
+                このプラットフォームの機構（3軸の移動）は、多くの産業機械の基礎となっています。<br>
+                例えば、先端に取り付けるものを変えるだけで、全く違う機械になります。
+            </p>
+            <ul>
+                <li><strong>ペンプロッタ</strong>：ペンを持たせて、自動で絵を描く機械</li>
+                <li><strong>NC工作機械</strong>：ドリルやルーターを持たせて、木材や樹脂を削る機械</li>
+                <li><strong>3Dプリンター</strong>：樹脂を溶かして積み上げるノズルを持たせれば、まさに3Dプリンターそのもの！</li>
+                <li><strong>自動配膳機</strong>：グリッパー（掴む機構）をつけて、物を運ぶロボット</li>
+            </ul>
+
+            <h2 id="gcode">自動化へのステップアップ</h2>
+            <p>
+                プログラム編では、ボタン操作で軸を動かしました。<br>
+                では、これを<strong>「自動で決まった形を描く」</strong>ようにするにはどうすればいいでしょうか？
+            </p>
+            <div class="neko-box hint-neko">
+                <div class="neko-img-container">
+                    <img src="hintoneko.svg" alt="Hint Neko" class="neko-img">
+                </div>
+                <div class="neko-content">
+                    <h3>考えるヒント</h3>
+                    <p>
+                        産業用の機械は「Gコード」という特別な命令で動いていることが多いよ！<br>
+                        「X軸に10mm動け」「Y軸に-5mm動け」といった命令をリストにして読み込ませれば、複雑な図形も描けそう！<br>
+                        今のボタン操作のプログラムを、命令リストを順番に実行するプログラムに書き換えるにはどうしたらいいか、考えてみてほしいな！
+                    </p>
+                </div>
+            </div>
+
+            <h2 id="example">製作例：ペンプロッタ</h2>
+            <p>
+                実際にこのプラットフォームを改造して作られた「ペンプロッタ」の例です。<br>
+                Z軸にペンを持ち上げる機構を追加し、Gコードを解釈するプログラムを組み込むことで、紙に図形を描画できるようになります。
+            </p>
+            <div
+                style="text-align: center; margin: 20px 0; padding: 40px; background-color: #f9f9f9; border-radius: 8px;">
+                <p style="color: #888; font-style: italic;">（ここにペンプロッタの作例写真や動画が入る）</p>
+                <!-- 将来的に画像があればここに追加 -->
+            </div>
+
+            <h2 id="create">君は何を作る？</h2>
+            <p>
+                XYZ座標系を使って何を表現できるか、可能性は無限大です。<br>
+                ハードウェアを改造するもよし、ソフトウェア（プログラム）を進化させるもよし。<br>
+                あなただけのオリジナルの機械を作ってみましょう！
+            </p>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="index.html" class="btn-back">ホームに戻る</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 XYZ Coordinate System Platform Education.</p>
+        <p style="font-size: 0.8rem; margin-top: 5px; color: #888;">Created by R21085 立石楓</p>
+    </footer>
+</body>
+
+</html>

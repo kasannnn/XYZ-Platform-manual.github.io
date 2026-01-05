@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハードウェア - XYZ座標系プラットフォーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">XYZ Platform</a>
+            <ul>
+                <li><a href="hard.html" style="color: var(--primary-color);">Hard</a></li>
+                <li><a href="circuit.html">Circuit</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="advanced.html">Advanced</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content-section">
+            <h1 style="color: var(--secondary-color); text-align: center; margin-bottom: 40px;">ハードウェアの製作</h1>
+
+            <p style="font-size: 1.1em; line-height: 1.8;">
+                このセクションでは、まず初めに<strong>[axis nut]</strong>、<strong>[axis shaft] </strong>、<strong>[axis
+                    base]</strong>、<strong>[lead screw]</strong> 、<strong>[Z-Y connecting parts]</strong>、<strong>[Z-X
+                    connecting parts]
+                </strong>のモデリングを行います。<br>そして、すべてのパーツを作成した後に3Dプリンターで出力し、それらを結合してXYZ座標系のプラットフォームを完成させます。<br>
+                最初に [axis nut] のモデリング方法を丁寧に解説します。残りのパーツについては、[axis nut] で学んだ操作方法を応用して、2D図面を読み解きながら自力でモデリングに挑戦してみましょう。
+            </p>
+
+            <div class="neko-box point-neko">
+                <div class="neko-img-container">
+                    <img src="pointneko.svg" alt="Point Neko" class="neko-img">
+                </div>
+                <div class="neko-content">
+                    <h3>POINT</h3>
+                    <p>作業工程の多いパーツもあるけど、難しく考えすぎず、まずは基本を押さえていこう！</p>
+                </div>
+            </div>
+
+            <h2>1. [axis nut] のモデリング</h2>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="axis nut whole.png" alt="Axis Nut Whole"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+            <p>[axis nut] は基本的な形状のパーツです。以下の手順に沿って作成してみましょう。</p>
+
+            <h3>Step 0: ツールの紹介</h3>
+            <p>モデリングの際に使用するツールを紹介します。</p>
+            <div style="display: flex; gap: 20px; margin: 20px 0; justify-content: center; flex-wrap: wrap;">
+                <img src="ツール紹介1.png" alt="Tool Introduction 1"
+                    style="max-width: 45%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+                <img src="ツール紹介2.png" alt="Tool Introduction 2"
+                    style="max-width: 45%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+            <p><strong>➀スケッチを作成</strong>：平面を指定して図形を描きます<br>
+                <strong>➁押し出し</strong>：スケッチを選択して押し出しを行います<br>
+                <strong>➂ねじ</strong>：筒状のものの内側にねじを切ります<br>
+                <strong>➃フィレット</strong>：角を丸めます<br><strong>➄結合</strong>：別々のモデルを１つにします<br><strong>➅移動</strong>：モデルを移動します<br><strong>➆尺度</strong>：
+                モデルのサイズを変更します<br><strong>➇ボディを分割</strong>：面を指定したところでボディを分割し、新しいボディを作成します
+            </p>
+
+
+            <div class="neko-box hint-neko">
+                <div class="neko-img-container">
+                    <img src="hintoneko.svg" alt="Hint Neko" class="neko-img">
+                </div>
+                <div class="neko-content">
+                    <h3>HINT</h3>
+                    <p>ほかにも様々なツールや便利ツールがあるけど、基本の使い方をまずはマスターしよう！</p>
+                </div>
+            </div>
+
+            <h3>Step 1: 本体のスケッチ</h3>
+            <p>スケッチ作成を押し、平面(XY平面)を指定します。</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1.png" alt="Step 1"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+            <p>長方形を選択し、図面上に２点を指定して長方形を描きます。その後にスケッチ寸法を使用して長方形の寸法を指定して長方形の大きさを決めます。今回は<strong>長辺を70㎜、短辺を20㎜</strong>に設定します。
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-2.png" alt="Step 1-2"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+
+            <div class="neko-box hint-neko">
+                <div class="neko-img-container">
+                    <img src="hintoneko.svg" alt="Hint Neko" class="neko-img">
+                </div>
+                <div class="neko-content">
+                    <h3>HINT</h3>
+                    <p>こんな感じで寸法を変えることができるよ！</p>
+                    <div style="margin-top: 10px;">
+                        <img src="ステップ1-3.png" alt="Step 1-3"
+                            style="max-width: 100%; height: auto; border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+
+
+            <h3>Step 2: 押し出し</h3>
+            <p>先ほどスケッチした長方形を選択し、矢印をマウスで押して操作するか数値を入力して<strong>60㎜</strong>押し出しを行います。</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-4.png" alt="Step 1-4"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+
+            <h3>Step 3: スケッチ2</h3>
+            <p>先ほど押し出した直方体の一番大きな面を選択して画像のようにスケッチをします。</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-5.png" alt="Step 1-5"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+
+            <h3>Step 4: 押し出し2</h3>
+            <p>スケッチした３つの円を押し出しでくりぬきます。</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-6.png" alt="Step 1-6"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+
+            <div class="neko-box point-neko">
+                <div class="neko-img-container">
+                    <img src="pointneko.svg" alt="Point Neko" class="neko-img">
+                </div>
+                <div class="neko-content">
+                    <h3>POINT</h3>
+                    <p>ちゃんとくりぬけているかを、<strong>操作が切り取りになっているかや、モデルを傾けて確認してね！</strong></p>
+                </div>
+            </div>
+
+            <h3>Step 5: ねじ</h3>
+            <p>ネジツールを選択して、<strong>フィーチャ編集のモデル化にチェックをつけた後に、先ほどくりぬいたφ20の円の内側を選択します。</strong>そうすると画像のようなネジが切れます。フィーチャ編集の赤枠で囲っている部分とおなじ設定であればOKです。
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-7.png" alt="Step 1-7"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+
+            <h3>Step 6: スケッチ3</h3>
+            <p>穴をあけた面をもう一度選択し、先ほど開けた３つの穴のそれぞれよりも１回りほど大きい円をスケッチしてください。画像では大きさを切りのいい値にしていますがしなくても大丈夫です。</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-8.png" alt="Step 1-8"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+
+            <h3>Step 7: ボディを分割</h3>
+            <p>先ほどスケッチした円を使って今のボディから３つの円の部分を分割して独立したボディを作ります。<br>ボディを分割のツールを選択し、分割したい部分が含まれているボディをクリックで選択します。(今回の場合ボディは今の段階で一つしかないので今製作しているパーツを選択してください。)<br>選択ができたら選択したボディが青くなるので、それが確認出来たら<strong>フィーチャ編集の「分割ツール」をクリックした後に先ほどスケッチした３つの円が選択できるようになっていると思うのですべてクリックして選択してください。</strong><br>選択すると分割するボディが赤くなるので、画像のようになっていればOKです。
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-9.png" alt="Step 1-9"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+
+            <h3>Step 8: スケッチ4</h3>
+            <p>穴の開いた面を選択し、３つの穴それぞれの中心に点をスケッチします。</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-10.png" alt="Step 1-10"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+
+            <h3>Step 9: 尺度</h3>
+            <p>尺度を選択し、尺度を変更したいボディを選択します。(今回はまずネジ穴を選択します。)<br>
+                <strong>選択したボディが青くなったら勝手に点が設定されたいると思うのでフィーチャ編集の「点」のところの「×」をクリックし、解除してからまた改めて「選択」をクリックし、先ほどスケッチした中心点をクリックします。</strong><br>
+                その後に<strong>「尺度のタイプ」を「不均一」にし、右上の赤丸で尺度を拡大したい２方向を確認し、尺度を変更してください。</strong><br>
+                今回は<strong>XとZにそれぞれ20.6/20とします。</strong><br>
+                出来たら一度「OK」をクリックし、下の二つの穴についても同様に尺度を変更してください。下2つの穴の尺度の値は<strong>10.4/10</strong>です。
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-11.png" alt="Step 1-11"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-12.png" alt="Step 1-12"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+
+            <div class="neko-box point-neko">
+                <div class="neko-img-container">
+                    <img src="pointneko.svg" alt="Point Neko" class="neko-img">
+                </div>
+                <div class="neko-content">
+                    <h3>POINT</h3>
+                    <p>ネジ穴部分は滑りが良くなるように少し尺度を大きくし、下の２つの穴はシャフトが入る部分だからネジ穴の尺度より少し大きいくらいにしたけど、基本的に尺度は<strong>「直径+0.5/直径」で大丈夫！</strong>
+                    </p>
+                </div>
+            </div>
+
+            <h3>Step 10: 結合</h3>
+            <p>結合ツールを選択し、結合したい大元のボディをクリックします。<br>
+                選択後にフィーチャ編集の「ツールボディ」を選択し、先ほど尺度を変更した3つの穴をクリックして選択します。<br>
+                後は「OK」を押して完了です。
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-13.png" alt="Step 1-13"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+
+
+
+            <h3>Step 11: これまでの復習</h3>
+            <p>これまでの復習として<strong>axis nutの左右の側面に1つづつネジ穴</strong>をあけてみましょう。<br>
+                基本となる寸法は<strong>穴の直径φ4、穴の深さ25㎜</strong>、その他寸法やヒントなどは画像などで確認し、できるところまで自力で頑張ってみましょう。
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-14.png" alt="Step 1-14"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow); margin-bottom: 20px;">
+                <img src="ステップ1-15.png" alt="Step 1-15"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow); margin-bottom: 20px;">
+                <img src="ステップ1-16.png" alt="Step 1-16"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow); margin-bottom: 20px;">
+            </div>
+
+            <div class="neko-box hint-neko">
+                <div class="neko-img-container">
+                    <img src="hintoneko.svg" alt="Hint Neko" class="neko-img">
+                </div>
+                <div class="neko-content">
+                    <h3>HINT</h3>
+                    <p>穴をあけるところまでは穴をあける面がそれぞれ違うから同じ作業を重複して行っていたと思うけど、<br>
+                        ボディを分割してみたらわかる通り、<strong>ボディの分割される範囲が左右の穴の両方を含んでいるからボディを分割からの工程はすべて１回分行うだけで済むようになるよ！</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-17.png" alt="Step 1-17"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow); margin-bottom: 20px;">
+                <img src="ステップ1-18.png" alt="Step 1-18"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow); margin-bottom: 20px;">
+                <img src="ステップ1-19.png" alt="Step 1-19"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow); margin-bottom: 20px;">
+                <img src="ステップ1-20.png" alt="Step 1-20"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+
+
+
+            <h3>Step 12: 保存</h3>
+            <p>左右にねじ穴をあけることができれば完成なので完成したら保存マークを押して保存します。<br>
+                初めて保存する際は画像のような画面が出てくるので、名前を付け、保存場所を決めて保存しましょう。<br>
+                保存場所を作る際は、プロジェクトからDefault Projectを選択し、新規フォルダをクリックすると新規フォルダができるので、名前を決めてそのフォルダの中に保存しましょう。
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="ステップ1-21.png" alt="Step 1-21"
+                    style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+            </div>
+
+            <h2>2. 残りのパーツ作成</h2>
+            <p>次は、以下のパーツを2D図面を見ながら自力で作成してみましょう。</p>
+            <ul>
+                <li><strong>[axis shaft]</strong> (2個)</li>
+                <li><strong>[axis base]</strong></li>
+                <li><strong>[lead screw]</strong></li>
+            </ul>
+
+            <div class="neko-box point-neko">
+                <div class="neko-img-container">
+                    <img src="pointneko.svg" alt="Point Neko" class="neko-img">
+                </div>
+                <div class="neko-content">
+                    <h3>POINT</h3>
+                    <p>同じような形状や操作の繰り返しになることが多いよ！</p>
+                </div>
+            </div>
+
+            <p>すべてのパーツができたら、3Dプリンターでの出力準備に進みます。</p>
+
+            <div
+                style="text-align: center; margin: 40px 0; padding: 20px; background-color: #f0f0f0; border-radius: 8px;">
+                <p style="margin-bottom: 15px; font-weight: bold;">
+                    BambuStudioを使用される方でBambuStudioの使用方法が分からない方はこちらを参考にしてください</p>
+                <a href="bambustudio.html"
+                    style="color: var(--primary-color); text-decoration: underline; font-size: 1.1em;">Bambu Studio
+                    使用方法マニュアル</a>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="index.html" class="btn-back">ホームに戻る</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 XYZ Coordinate System Platform Education.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+:root {
+    /* Natural Color Palette */
+    --bg-color: #fdfbf7;
+    /* Off-white/Cream - mimicking paper or canvas */
+    --text-color: #4a4a4a;
+    /* Dark Gray - softer than black */
+    --primary-color: #8da399;
+    /* Sage Green - nature, plants */
+    --secondary-color: #8c7b75;
+    /* Warm Brown - earth, wood */
+    --accent-color: #d6cfc7;
+    /* Light Beige/Stone - subtle contrast */
+    --card-bg: #ffffff;
+    /* White for cards */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(253, 251, 247, 0.9);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--accent-color);
+    backdrop-filter: blur(5px);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary-color);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    color: var(--secondary-color);
+    font-weight: normal;
+}
+
+.card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+
+/* Subpage Specifics */
+.content-section {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-top: 20px;
+}
+
+.content-section h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.content-section h3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Neko Box Styles */
+.neko-box {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 30px 0;
+    box-shadow: var(--shadow);
+    border-left: 6px solid;
+    gap: 20px;
+}
+
+.neko-img-container {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    border: 2px solid;
+}
+
+.neko-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Point Neko (Top Cat) */
+.point-neko {
+    border-left-color: #e67e22;
+    /* Orange/Brown for emphasis */
+    background-color: #fffaf0;
+}
+
+.point-neko .neko-img-container {
+    border-color: #e67e22;
+}
+
+.point-neko h3 {
+    color: #d35400;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Hint Neko (Bottom Cat) */
+.hint-neko {
+    border-left-color: var(--primary-color);
+    /* Sage Green */
+    background-color: #f4fcf6;
+}
+
+.hint-neko .neko-img-container {
+    border-color: var(--primary-color);
+}
+
+.hint-neko h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+}

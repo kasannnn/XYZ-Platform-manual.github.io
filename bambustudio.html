@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambu Studio 使用方法 - XYZ座標系プラットフォーム</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .manual-img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin: 20px 0;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .manual-section {
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">XYZ Platform</a>
+            <ul>
+                <li><a href="hard.html" style="color: var(--primary-color);">Hard</a></li>
+                <li><a href="circuit.html">Circuit</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="advanced.html">Advanced</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content-section">
+            <h1 style="color: var(--secondary-color); text-align: center; margin-bottom: 20px;">Bambu Studio 使用方法マニュアル
+            </h1>
+
+            <div class="manual-section">
+                <h2>1. インストール</h2>
+                <p>まずはブラウザで「Bambu Studio」と検索してください．そうするとこのページが出てくると思いますので，これをクリックしてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/bambustudio検索.png" alt="Bambu Studio Search" class="manual-img">
+                </div>
+
+                <p>ページをクリックすると，下の画面が出てくると思うので，お使いのパソコンに合った方をダウンロードしてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/bambustudioインストール.png" alt="Bambu Studio Install" class="manual-img">
+                </div>
+
+                <p>ダウンロードが完了するとエクスプローラーやFinderに保存されていると思うので，これをご自身の好きなフォルダーに保存しておいてください．(任意)</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/bambustudioダウンロード完了.png" alt="Download Complete" class="manual-img"
+                        style="width: 60%;">
+                </div>
+
+                <p>ダウンロード完了した「Bambu_Studio_win_public」をクリックして起動させてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/bambustudioアイコン.png" alt="Icon" class="manual-img">
+                </div>
+
+                <p>クリックした際に「このアプリがデバイスに変更を加えることを許可しますか」と聞かれることがありますが，<strong>「はい」</strong>で大丈夫です．</p>
+
+                <h3>ダウンロードした「Bambu Studio」を開くと初期設定が始まります．</h3>
+
+                <p>初めの画面は<strong>「Bambu Studio 02.00.03.54 セットアップへようこそ．セットアップでは，Bambu Studio 02.00.03.54
+                        のインストールを順を追って案内します．インストールを開始する前に，他のすべてのアプリケーションを終了させることをおすすめします．これにより，コンピューターを再起動せずに必要なシステムファイルを更新できるようになります．「次へ」をクリックして続行してください．」</strong><br>
+                    と書いてありますので，<strong>「Next ＞」</strong>をクリックしてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/起動最初.png" alt="Setup 1" class="manual-img" style="width: 60%;">
+                </div>
+
+                <p>次の画面では<strong>「Bambu Studio 02.00.03.54 をインストールする前に，ライセンス条項を確認してください．キーボードの「Page
+                        Down」キーを押すと，契約書の続きを見ることができます．契約内容に同意する場合は，「同意する（I Agree）」をクリックして続行してください．この契約に同意しないと，Bambu
+                        Studio 02.00.03.54 をインストールすることはできません．」</strong><br>
+                    と書いてありますので，<strong>「I Agree」</strong>をクリックしてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/起動2画面目.png" alt="Setup 2" class="manual-img" style="width: 60%;">
+                </div>
+
+                <p>次の画面では<strong>「Bambu Studio 02.00.03.54 をインストールするフォルダーを選択してください．セットアップは，次のフォルダーに Bambu Studio
+                        02.00.03.54
+                        をインストールします．別のフォルダーにインストールしたい場合は，「参照（Browse）」をクリックして，別のフォルダーを選んでください．「インストール（Install）」をクリックすると，インストールが開始されます．」</strong><br>
+                    と書いてありますので，<strong>必要に応じてフォルダーを参照し，「Install」</strong>をクリックしてください．(画像を撮ることを忘れていたのですみませんがここの画像はありません．)<br>
+                    インストールが完了すると下のような画像の画面になるので，<strong>「Next ＞」</strong>クリックしてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/起動3画面目.png" alt="Setup 3" class="manual-img" style="width: 60%;">
+                </div>
+
+                <p>次の画面では<strong>「インストール成功．Bambu Studio を起動する．以下のファイル形式を Bambu Studio に関連付ける：.3mf ファイルを Bambu Studio
+                        に関連付ける：.stl ファイルを Bambu Studio に関連付ける：.step / .stp ファイルを Bambu Studio に関連付ける」</strong><br>
+                    と書いてありますので，<strong>すべてにチェックを入れたまま「Close」</strong>をクリックしてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/起動4画面目.png" alt="Setup 4" class="manual-img" style="width: 60%;">
+                </div>
+
+                <p>もしかすると「Close」をクリックした後に下の画像のような警告が出るかもしれません．内容は<strong>「コマンドライン引数 0 を Unicode
+                        に変換できなかったため，無視されます」</strong>と書いてありますが，<strong>「OK」</strong>で大丈夫です．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/起動時最終エラー.png" alt="Error" class="manual-img">
+                </div>
+            </div>
+
+            <div class="manual-section">
+                <h2>2. 起動後セットアップ</h2>
+                <p>起動が終わると下の画像の画面に切り替わります．<strong>「利用開始」</strong>をクリックして「地域選択・ユーザ体験向上プログラム」などのセットアップを済ませてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/bambustudioへようこそ.png" alt="Welcome" class="manual-img"
+                        style="width: 70%;">
+                </div>
+
+                <p>セットアップの途中で使用するプリンターの選択をする画面になりますが，今回使用するプリンターは<strong>「Bambu Lab A1
+                        mini」</strong>なので最低限そこだけにチェックマークを入れて次へ進んでください．ただ，Bambu
+                    Lab社の製品だけでなく他社の製品も選択できるようになっているので，自分の持っているプリンターや他に使用することのあるプリンターも選択しておくといいと思います．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/プリンター選択.png" alt="Printer Selection" class="manual-img"
+                        style="width: 70%;">
+                </div>
+
+                <p>次にフィラメント選択ですが，これはデフォルトのまま特に変更はしなくて大丈夫です．あとから設定もできます．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/フィラメント選択.png" alt="Filament Selection" class="manual-img"
+                        style="width: 70%;">
+                </div>
+
+                <p><strong>Bambu ネットワークプラグイン</strong>はデフォルトのチェックマークの入ったまま<strong>「完了」</strong>をクリックしてください．<br>
+                    ネットワークプラグインのインストール完了後に<strong>「パブリックネットワークとプライベートネットワークにこのアプリへのアクセスを許可しますか？」</strong>と聞かれることもありますが，<strong>「許可」</strong>で大丈夫です．
+                </p>
+            </div>
+
+            <div class="manual-section">
+                <h2>3. 新規登録・サインイン</h2>
+                <p>ここからは新規登録・サインインを行っていきます．まず，<strong>「サインイン/登録」</strong>をクリックしてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/サインイン登録.png" alt="Sign In/Register" class="manual-img"
+                        style="width: 70%;">
+                </div>
+
+                <p>クリックするとこのページに来るので，<strong>アカウントがある方はサインイン</strong>，<strong>アカウントがない方はアカウント作成</strong>をクリックしてください．<strong>今回はアカウント作成の手順を解説していきます．</strong>
+                </p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/サインインページ.png" alt="Sign In Page" class="manual-img" style="width: 60%;">
+                </div>
+
+                <p>アカウント登録をクリックすると下の画像のページに行くので，<strong>メールアドレス・認証コード・パスワード</strong>を入力してください．メールアドレスは学校のものでもいいですが，卒業後も使用する可能性があるのであれば，個人のメールアドレスを登録してください．(なぜかicloudのメールが使えなかったので注意してください)
+                </p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/アカウント登録.png" alt="Registration" class="manual-img" style="width: 60%;">
+                </div>
+
+                <p>登録が完了すると，先ほどのサインインページに行くので．先ほど登録したメールアドレスとパスワードを入力してサインインしてください．</p>
+            </div>
+
+            <div class="manual-section">
+                <h2>4. 印刷準備</h2>
+                <p>ここからは印刷方法について説明していきます．まず作成した3Dモデルを印刷可能なファイルに変換します．今回私はFusion360を使用したのでFusion360で説明していきます．<br>
+                    Fusion360で<strong>「ファイル」</strong>から<strong>「3Dプリント」</strong>をクリックしてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/3Dプリント選択.png" alt="3D Print Menu" class="manual-img" style="width: 55%;">
+                </div>
+
+                <p>クリックするとこの画面が表示されるので，出力形式は<strong>「3mf」</strong>のままで印刷したいオブジェクトを選択して<strong>「OK」</strong>をクリックしてください．複数のオブジェクトをがある場合は，1ファイルにまとめるか，1ボディ1ファイルにするか選択してください．
+                </p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/3D形式選択.png" alt="3D Format" class="manual-img" style="width: 45%;">
+                </div>
+
+                <p>「OK」をクリックすると以下の画面が出てきますので，<strong>Fusion360内の保存先の確認</strong>，<strong>ローカルコンピュータに保存</strong>(こちらも保存先を確認すること)，これらを確認して<strong>「保存」</strong>をクリックしてください．
+                </p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/3Dプリント保存先.png" alt="Save Location" class="manual-img" style="width: 80%;">
+                </div>
+
+                <p>ここまで出来たら<strong>Bambu Studio</strong>に移動してください．<br>
+                    Bambu studioの<strong>「準備」</strong>をクリックしてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/準備クリック.png" alt="Prepare Click" class="manual-img">
+                </div>
+
+                <p>次に，先ほどエクスポートした3mfファイルを下記の四角で囲んでいる範囲内にドラック＆ペーストしてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/3Dプリント準備画面.png" alt="Prepare Screen" class="manual-img">
+                </div>
+
+                <p>読み込み時に下記のようなエラーが出ると思いますが，Fusion360でモデルを作成したためこのエラーは出て当然のものです．なので「OK」で大丈夫です．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/読み込みエラー.png" alt="Load Error" class="manual-img">
+                </div>
+
+                <p>1ファイルに複数のパーツがある場合には下記のような文言が出てきますがこれも「はい」で大丈夫です．（もし，作成したモデルの片方が浮遊しているなら「いいえ」でもいいですが，分からない場合はここで「はい」を選択してもあとから準備画面の上方のツールバーにある「オブジェクトに分割」から分割することができます．）
+                </p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/マルチパーツ検出.png" alt="Multi Part" class="manual-img">
+                </div>
+
+                <p>プレート上にモデルが表示されたら，先ずはプリンターを選択します．今回は<strong>「Bambu Lab A1 mini」</strong>を使用します．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/印刷プリンター.png" alt="Printer" class="manual-img">
+                </div>
+
+                <p>次に，使用するフィラメントを選択します．今回は<strong>「Generic PLA」</strong>を使用します.</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/genericpla.png" alt="Generic PLA" class="manual-img" style="width: 40%;">
+                </div>
+
+                <p>次に，<strong>「プロセス」の「詳細」をオン</strong>にし，<strong>「サポート」の「有効化」もオン</strong>にします．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/サポート有効化.png" alt="Support" class="manual-img" style="width: 40%;">
+                </div>
+
+                <p>次に，「プロセス」内の「強度」の「トップ面層数」をデフォルトの「5」から「3」にします．(これは別にしなくてもいいですが，トップの面はものによりますが今回はそんなに固くなくてもいいので「3」にしました．)
+                </p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/トップ面層数.png" alt="Top Layers" class="manual-img" style="width: 40%;">
+                </div>
+
+                <p>次に，左上の<strong>「プレビュー」</strong>をクリックして，右上の<strong>「スライス」</strong>をクリックしてください．そうするとサポート材が必要なところにはサポートが表示されます．
+                </p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/スライス.png" alt="Slice" class="manual-img">
+                </div>
+
+                <p>次に，右上の<strong>「造形開始」の左横の下向きのマーク</strong>を押すと画像のような項目が出てくるので，その中から<strong>「エクスポート(全プレート)」</strong>をクリックしてください．
+                </p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/エクスポート.png" alt="Export" class="manual-img" style="width: 50%;">
+                </div>
+
+                <p>次に，プリンタにデータを送信するためにプリンタに刺さっているSDカード内にデータをエクスポートしていきます．まずはSDカードを差し込めるUSBを用意します．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/cardreaderusb.png" alt="USB" class="manual-img" style="width: 40%;">
+                </div>
+
+                <p>次に，Bambu Lab A1miniからSDカードを抜きます．1回押し込むと出てきます．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minisdcard.png" alt="SD Card" class="manual-img" style="width: 50%;">
+                </div>
+
+                <p>抜き取ったSDカードを先ほど用意したUSBに差し込んでパソコンにUSB接続させます．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/sdcardandusb.png" alt="Connect" class="manual-img" style="width: 40%;">
+                </div>
+
+                <p>Bambu
+                    Studioに戻って，<strong>「エクスポート(全プレート)」</strong>(画像では「エクスポート」になっていますが「エクスポート(全プレート)」が正しいです．)をクリックし，<strong>SDカードの刺さっているUSB内に保存</strong>します．
+                </p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/usbエクスポート.png" alt="USB Export" class="manual-img" style="width: 80%;">
+                </div>
+            </div>
+
+            <div class="manual-section">
+                <h2>5. 印刷</h2>
+                <p>最後に印刷をしていきます．先ほどエクスポートしたSDカードをBambu Lab A1 miniに戻し，プリンタの背面にある電源をつけます．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minigrd.png" alt="Power On" class="manual-img" style="width: 40%;">
+                </div>
+
+                <p>電源をつけると下記の画面が出てきますので，矢印の指す画面を選択してください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minihome.png" alt="Home Screen" class="manual-img" style="width: 40%;">
+                </div>
+
+                <p>次に，今回プリントするモデルを選択してください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minichoice.png" alt="Model Select" class="manual-img"
+                        style="width: 40%;">
+                </div>
+
+                <p>選択すると下記の画面が出てきますので，右上の<strong>「Print」</strong>を選択してください．そうするとプリントが開始されます．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1miniprint.png" alt="Print Start" class="manual-img" style="width: 40%;">
+                </div>
+
+                <p>別に絶対しなければいけないことではないですが，プリント中にプリントの速さを選択することができます．まず，下記の画面の右端の囲っている部分をどこでもいいので選択します．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1miniprinthome.png" alt="Speed Control 1" class="manual-img"
+                        style="width: 40%;">
+                </div>
+
+                <p>次に，下記の画面の矢印のところを選択します．(私はもうすでに速度を変更しているので166％になっていますが気にしないでください．)</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minispead.png" alt="Speed Control 2" class="manual-img"
+                        style="width: 40%;">
+                </div>
+
+                <p>選択すると速度の変更画面に移動するので一番下の最大パーセントを選択します．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minispeadchoice.png" alt="Speed Max" class="manual-img"
+                        style="width: 40%;">
+                </div>
+
+                <p>印刷が終了しましたら，音が鳴りますので，音が鳴ってから<strong>最低でも2分は放置</strong>してからプリントしたものを台座から取ってください．印刷が終了してすぐにプリントしたものをさわると，<strong>やけどをする可能性</strong>やフィラメントがまだ完全に固まっていないと<strong>変形してしまう可能性</strong>があります．
+                </p>
+            </div>
+
+            <div class="manual-section">
+                <h2>トラブルシューティング</h2>
+                <h3>1. Bambu Studioのトップ画面が英語表記だった時</h3>
+                <p>まず，左上の「ファイル」横の<strong>「Ｖ」</strong>をクリックし，その後に<strong>「設定(Settings)」</strong>をクリックしてください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/設定.png" alt="Settings" class="manual-img" style="width: 30%;">
+                </div>
+                <p>その次に，<strong>「言語(Langage)」</strong>から日本語を選択してください．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/設定言語変更.png" alt="Language" class="manual-img" style="width: 60%;">
+                </div>
+                <p>その次に，保存されていない内容があるといわれた場合は保存を行い，再起動を要求されるので，再起動をすれば完了です．</p>
+
+                <h3>2. フィラメントの交換方法(PLAからPLA)</h3>
+                <p>最初にフィラメントの外し方について解説していきます．まず，初めの画面の<strong>「filament」</strong>を選択します．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minihomefila.png" alt="Filament Home" class="manual-img"
+                        style="width: 40%;">
+                </div>
+
+                <p>次に，今あるフィラメントを外すために<strong>「Unload」</strong>を選択します．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minifilamentunload.png" alt="Unload" class="manual-img"
+                        style="width: 40%;">
+                </div>
+
+                <p>選択すると下記の画面になり，フィラメントを外し始めます．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minifilamentunloadnow.png" alt="Unloading" class="manual-img"
+                        style="width: 40%;">
+                </div>
+
+                <p>途中で「フィラメントを抜いてください」という表示が出ますので，プリンターからフィラメントを引っ張りぬいてください．抜けたら<strong>「Retry」</strong>を選択してください．これでフィラメントの取り外し完了です．
+                </p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minifilamentunloadout.png" alt="Unload Done" class="manual-img"
+                        style="width: 40%;">
+                </div>
+
+                <p>次に，新しいフィラメントの取付方法について解説していきます．まずはフィラメントを外すとき同様初めの画面の<strong>「filament」</strong>を選択し，今回はフィラメントを取り付けるので<strong>「load」</strong>を選択します．
+                </p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minifilamentload.png" alt="Load" class="manual-img" style="width: 40%;">
+                </div>
+
+                <p>選択すると下記の画面になり，フィラメントを取り付ける準備をし始めます．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minifilamentloadnow.png" alt="Loading" class="manual-img"
+                        style="width: 40%;">
+                </div>
+
+                <p>準備中にあらかじめフィラメントをプリンターに差し込んでこれ以上差し込めなくなるまでセットしておきます．</p>
+                <div class="center-text">
+                    <img src="BambuStudio使用方法/a1minifilamentloadin.png" alt="Load In" class="manual-img"
+                        style="width: 40%;">
+                </div>
+
+                <p>フィラメントを差し込んでから少し経つと以下のような表示が出てきます．これは「プリンター内に残っていたフィラメントを出しています，ノズルの先から新しいフィラメントが出ているか確認してください」という内容のものなのでノズルの先を確認して新しいフィラメントが出ていれば<strong>「Done」</strong>出ていなければ<strong>「Retry」</strong>を選択してください．フィラメントが出ていない場合はフィラメントがノズルの先から出てくるまで繰り返し「Retry」を選択してください．「Done」を押した後はプリンターがフィラメントの取付を完了させてくれるのでこれで作業は完了です．
+                </p>
+                <div class="center-text" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <img src="BambuStudio使用方法/a1minifilamentloadfilaout.png" alt="Load Out" class="manual-img">
+                    <img src="BambuStudio使用方法/a1minifilamentloadretly.png" alt="Load Retry" class="manual-img">
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="hard.html" class="btn-back">ハードウェアページに戻る</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 XYZ Coordinate System Platform Education.</p>
+    </footer>
+</body>
+
+</html>
